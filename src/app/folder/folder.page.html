@@ -15,6 +15,10 @@
   </ion-header>
 
   <div id="container">
+    <builder-component model="page" (load)="contentLoaded($event)" (error)="contentError($event)">
+      <!-- Default content inside the tag shows while the builder content is fetching -->
+      <div class="spinner"></div>
+    </builder-component>
     <strong class="capitalize">{{ folder }}</strong>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>

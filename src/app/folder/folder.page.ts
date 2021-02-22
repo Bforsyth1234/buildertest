@@ -15,4 +15,14 @@ export class FolderPage implements OnInit {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
   }
 
+  contentLoaded($event) {
+    console.log('$event = ');
+    console.log($event);
+  }
+
+  contentError(event) {
+    console.log('event = ');
+    console.log(event);
+  }
+
 }
