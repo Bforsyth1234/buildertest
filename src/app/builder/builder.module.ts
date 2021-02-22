@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FolderPageRoutingModule } from './folder-routing.module';
+import { BuilderPageRoutingModule } from './builder-routing.module';
 
-import { FolderPage } from './folder.page';
+import { BuilderPage } from './builder.page';
 import { BuilderModule } from '@builder.io/angular';
 
 @NgModule({
@@ -14,8 +14,9 @@ import { BuilderModule } from '@builder.io/angular';
     CommonModule,
     FormsModule,
     IonicModule,
-    FolderPageRoutingModule
+    BuilderPageRoutingModule,
+    BuilderModule.forRoot('ffb685b46c7d4c7b837ecf3db24885d4')
   ],
-  declarations: [FolderPage]
+  declarations: [BuilderPage]
 })
-export class FolderPageModule {}
+export class BuilderPageModule {}
